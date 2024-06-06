@@ -1,0 +1,55 @@
+@import "../../styles/color.module.scss";
+@import "../../styles/fontsize.scss";
+
+.productList {
+    padding: 10px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+  }
+.product{
+    height: 300px;
+  padding: 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    background: #f9f9f9;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.picdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cardpic{
+ width: 100px;
+ 
+}
+
+.butndiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.btnedit{
+    border: none;
+ border-radius: 5px;
+background: #32de84;
+height: 40px;
+font-family:sans-serif;
+@include font13;
+font-weight: 550;
+cursor: pointer;
+&:hover{
+    background:#84e4b2  ;
+}
+}
+.itemname{
+ @include fontbody;
+}
+.itemprice{
+    @include font18;
+}

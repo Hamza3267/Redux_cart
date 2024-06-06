@@ -1,0 +1,74 @@
+@import "../../styles/color.module.scss";
+@import "../../styles/fontsize.scss";
+.maincartdiv{
+    padding: 10px;
+}
+.productList {
+    padding: 10px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 20px; 
+  }
+.product{
+    height: max-content;
+    width: 50%;
+  padding: 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    background: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+.picdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cardpic{
+ width:70px;
+ 
+}
+.butndiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.butoneditsss{
+    border: 1px solid #e5e5e5;
+    border-radius: 7px;
+    height: 40px;
+    width: max-content;
+    background: rgb(243, 161, 161);
+    @include fontbody;
+    cursor: pointer;
+    &:hover{
+        background: rgb(243, 69, 69);
+    }
+}
+.butoneditss{
+    border: 1px solid #e5e5e5;
+    border-radius: 7px;
+    height: 40px;
+    width: max-content;
+    background: rgb(108, 240, 75);
+    @include fontbody;
+    cursor: pointer;
+    &:hover{
+        background: rgb(134, 232, 147);
+    }
+}
+
+.itemname{
+ @include fontbody;
+}
+.itemprice{
+    @include font18;
+}
+.itemdesc{
+    @include font18;
+    
+}

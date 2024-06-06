@@ -1,0 +1,22 @@
+@import "../../styles/color.module.scss";
+@import "../../styles/fontsize.scss";
+.mainhead {
+    display: flex;
+    align-items:center;
+     justify-content:space-around;
+    
+    cursor: pointer;
+    font-size: larger;
+   
+   
+}
+.headernames{
+    display: flex;
+    align-items:center;
+    gap: 30px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: calc(10px + (18 - 10) * (100vw - 320px) / (1440 - 320));
+}
+.logoimg{
+    width: 100px;
+}
